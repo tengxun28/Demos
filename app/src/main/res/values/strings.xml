@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PrintTestS300A</string>
+
+    <string name="hello_world">本测试程序可用于老化测试!</string>
+    <string name="action_settings">Settings</string>
+</resources>

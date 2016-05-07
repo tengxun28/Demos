@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <!--
+    android:visibility="gone"
+    -->
+    <View
+        android:layout_width="160dp"
+        android:layout_height="5dp"
+        android:background="#6600FF00" />
+
+    <TextView
+        android:text="文本内xxxxfasdfasdfdsafsdafdsfdsfdsfdfxxxxxxxxxxx容cc"
+        android:id="@+id/tv"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:hint="请输入" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#00ff00"
+        android:layout_gravity="center_vertical"
+        android:thumb="@drawable/settings_seekbar_thumb_selected"
+        android:progressDrawable="@drawable/settings_seekbar_slider"
+        android:id="@+id/sb_sound" />
+
+
+</LinearLayout>

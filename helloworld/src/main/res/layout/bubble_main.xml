@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/dd"
+        android:textColor="@color/black"
+        android:text="@string/hello_world" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        />
+
+
+    <com.android.iboxpay.helloworld.BubbleTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/dd"
+        android:textColor="@color/white"
+        android:drawablePadding="10dp"
+        android:text="abcdadsfasdfadsfdsaf"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+         />
+
+    <com.android.iboxpay.helloworld.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="zhe shi  mytextview" />
+
+</LinearLayout>

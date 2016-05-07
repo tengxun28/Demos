@@ -1,0 +1,20 @@
+<resources>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="news_title">通知</string>
+    <string name="update_app">更新</string>
+
+    <string name="app_name">例子Demo</string>
+    <string name="activity1">HelloWorld_1</string>
+    <string name="activity2">HelloWorld_2</string>
+    <string name="activity3">HelloWorld_3</string>
+    <string name="activity4">HelloWorld_4</string>
+    <string name="activity5">HelloWorld_5</string>
+    <string name="activity6">HelloWorld_6</string>
+    <string name="activity7">HelloWorld_7890123456</string>
+
+    <string name="news_message"></string>
+
+</resources>
