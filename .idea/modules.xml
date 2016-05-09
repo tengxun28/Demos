@@ -5,8 +5,11 @@
       <module fileurl="file://$PROJECT_DIR$/Demos.iml" filepath="$PROJECT_DIR$/Demos.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/designmode/designmode.iml" filepath="$PROJECT_DIR$/designmode/designmode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/export_in_aar/export_in_aar.iml" filepath="$PROJECT_DIR$/export_in_aar/export_in_aar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/export_out_aar/export_out_aar.iml" filepath="$PROJECT_DIR$/export_out_aar/export_out_aar.iml" />
       <module fileurl="file://$PROJECT_DIR$/helloworld/helloworld.iml" filepath="$PROJECT_DIR$/helloworld/helloworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/intentservice/intentservice.iml" filepath="$PROJECT_DIR$/intentservice/intentservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaJardemo/javaJardemo.iml" filepath="$PROJECT_DIR$/javaJardemo/javaJardemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/setbooapp/setbooapp.iml" filepath="$PROJECT_DIR$/setbooapp/setbooapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/versiondemo/versiondemo.iml" filepath="$PROJECT_DIR$/versiondemo/versiondemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewpager/viewpager.iml" filepath="$PROJECT_DIR$/viewpager/viewpager.iml" />

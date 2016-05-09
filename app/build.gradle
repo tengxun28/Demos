@@ -17,6 +17,23 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    //
+   /* signingConfigs {
+        myConfig{
+            storeFile file("gradle.keystore")
+            storePassword "gradle"
+            keyAlias "gradle"
+            keyPassword "gradle"
+        }}
+
+    buildTypes{
+        release {
+            signingConfig  signingConfigs.myConfig
+        }
+    }*/
+
+    //
 }
 
 dependencies {
