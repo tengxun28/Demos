@@ -1,6 +1,5 @@
 package com.iboxpay.android.setbootapp;
 
-
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -14,8 +13,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -54,7 +51,7 @@ public class PickAppActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mContext = this;
-        mList = (ListView)findViewById(android.R.id.list);
+        mList = (ListView)findViewById(R.id.list);
         //mList.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
         mList.setOnItemClickListener(new ListView.OnItemClickListener() {
@@ -68,27 +65,6 @@ public class PickAppActivity extends Activity {
         loadAppItem();
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
 
     class AppsListAdapter extends SimpleAdapter {
@@ -133,9 +109,9 @@ public class PickAppActivity extends Activity {
             if (convertView == null) {
                 convertView = mInflater.inflate(R.layout.list_item, parent, false);
                 holder = new ViewHolder();
-                holder.mTitle = (TextView)convertView.findViewById(android.R.id.title);
-                holder.mSummary = (TextView)convertView.findViewById(android.R.id.summary);
-                holder.mIcon=(ImageView)convertView.findViewById(android.R.id.icon);
+                holder.mTitle = (TextView)convertView.findViewById(R.id.title);
+                holder.mSummary = (TextView)convertView.findViewById(R.id.summary);
+                holder.mIcon=(ImageView)convertView.findViewById(R.id.icon);
                 holder.mRadioButton=(RadioButton)convertView.findViewById(R.id.bt);
                 convertView.setTag(holder);
             } else {
@@ -228,7 +204,7 @@ public class PickAppActivity extends Activity {
                     public void run() {
                         mAdapter = new AppsListAdapter(mContext,items, R.layout.list_item,
                                 new String[]{KEY_ICON,KEY_APPNAME,KEY_CLASSNAME},
-                                new int[]{android.R.id.icon, android.R.id.title,android.R.id.summary});
+                                new int[]{R.id.icon, R.id.title,R.id.summary});
 
                         Message msg = Message.obtain();
                         msg.obj = mAdapter;

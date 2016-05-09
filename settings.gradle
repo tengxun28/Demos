@@ -1,1 +1,2 @@
-include ':app', ':setbooapp', ':viewpager', ':helloworld', ':versiondemo', ':designmode', ':intentservice', ':javaJardemo', ':export_out_aar', ':export_in_aar'
+include ':app', ':designmode', ':export_in_aar', ':export_out_aar', ':helloworld', ':intentservice', ':export_out_aar2' , ':setbootapp', ':versiondemo', ':viewpager'
+
