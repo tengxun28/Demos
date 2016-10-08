@@ -1,2 +1,3 @@
-include ':app', ':designmode', ':export_in_aar', ':export_out_aar', ':helloworld', ':intentservice', ':export_out_aar2' , ':setbootapp', ':versiondemo', ':viewpager'
+//include ':app', ':export_in_aar', ':export_out_aar', ':helloworld', ':intentservice', ':export_out_aar2', ':mycontentprovider', ':setbootapp', ':versiondemo', ':viewpager', ':recyclerviewdemo', ':myasynctask', ':tracedemo', ':loaderdemo', ':loaderdemo2', ':gradleDemos', ':blur', ':palettedemo'
+include ':gradleDemos', ':viewgroupdemo', ':font'
 

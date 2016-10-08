@@ -1,0 +1,162 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.0"
+    defaultConfig {
+        applicationId "com.lava.gradle.taskdemos"
+        minSdkVersion 15
+        targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug { }
+
+        bt1 {}
+        bt2 {}
+    }
+    productFlavors {
+        pt1{}
+        pt2{}
+        pt3{}
+    }
+
+    applicationVariants.all { variant ->
+        println "遍历 " + variant.name + "," + variant.productFlavors.name  + "," + variant.outputs.name + "," +variant.buildType.name
+
+        variant.outputs.each { output ->
+            def oldFile = output.outputFile
+            def releaseApkName = 'Lava-' + variant.name + '.apk'
+            println releaseApkName
+            output.outputFile = new File(oldFile.parent,releaseApkName)
+
+//            if (variant.buildType.name.equals('release')) {
+//              println(variant.productFlavors[0].name)
+//                def releaseApkName = 'study-' + defaultConfig.versionName + '-luckpan.apk'
+//                output.outputFile = new File(oldFile.parent, releaseApkName)
+//            }
+//            if (variant.buildType.name.equals('beta')) {
+//                newName = oldFile.name.replace(".apk", "-v" + defaultConfig.versionName + "-build" + getDate() + ".apk")
+//                output.outputFile = new File(oldFile.parent, newName)
+//            }
+        }
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+}
+
+/** ***********************************************/
+def greeting = { println "Hello, $it!" }
+def noParamClosure = { -> println "it" }
+
+task 'taskA' {
+    doLast {
+        println description + " begin"
+        println it.description
+        greeting(3)
+        greeting("3")
+        noParamClosure()
+    }
+    doLast {
+        println "另一个end"
+    }
+}
+
+taskA.description = "xx"
+
+task taskB(dependsOn: taskA) << {
+    println "B end"
+}
+/** ***********************************************/
+
+task hello << {
+    println 'Hello world!'
+//    description = 'Builds the distribution'
+//    group = 'build'
+}
+task intro(dependsOn: hello) << {
+    println "I'm Gradle"
+}
+
+/** ***********************************************/
+
+task count << {
+    4.times { print "$it " }
+}
+
+/** ***********************************************/
+
+task taskX(dependsOn: 'taskY') << {
+    println 'taskX'
+}
+task taskY << {
+    println 'taskY'
+}
+
+/** ***********************************************/
+
+4.times { counter ->
+    task "task$counter" << {
+        println "I'm task number $counter"
+    }
+}
+task0.dependsOn task2, task3
+
+/** ***********************************************/
+task hello2 << {
+    println 'Hello world!'
+    println hello2.name
+
+    description = 'Builds the distribution'
+    group = 'build'
+}
+hello2.doLast {
+    println "Greetings from the $hello2.name task."
+}
+
+/** ***********************************************/
+task myTask {
+    ext.myProperty = "myValue"
+}
+
+task printTaskProperties << {
+    println myTask.myProperty
+}
+
+/** ***********************************************/
+task loadfile << {
+    def files = file('build').listFiles().sort()
+    files.each { File file ->
+        if (file.isFile()) {
+            ant.loadfile(srcFile: file, property: file.name)
+            println " *** $file.name ***"
+            println "${ant.properties[file.name]}"
+        }
+    }
+}
+
+
+/** ***********************************************/
+
+/** ***********************************************/
+/** ***********************************************/
+/** ***********************************************/
+/** ***********************************************/
+/** ***********************************************/
+/** ***********************************************/
+/** ***********************************************/
+/** ***********************************************/
+/** ***********************************************/
+/** ***********************************************/

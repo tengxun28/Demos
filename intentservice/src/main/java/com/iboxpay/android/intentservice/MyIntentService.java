@@ -16,7 +16,7 @@ public class MyIntentService extends IntentService {
     protected void onHandleIntent(Intent arg0) {
         Log.e(TAG, "begin onHandleIntent() in " + this);
         try {
-            Thread.sleep(10 * 1000);
+            Thread.sleep(6* 1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

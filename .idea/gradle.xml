@@ -8,31 +8,17 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/designmode" />
-            <option value="$PROJECT_DIR$/export_in_aar" />
-            <option value="$PROJECT_DIR$/export_out_aar" />
-            <option value="$PROJECT_DIR$/export_out_aar2" />
-            <option value="$PROJECT_DIR$/helloworld" />
-            <option value="$PROJECT_DIR$/intentservice" />
-            <option value="$PROJECT_DIR$/setbootapp" />
-            <option value="$PROJECT_DIR$/versiondemo" />
-            <option value="$PROJECT_DIR$/viewpager" />
+            <option value="$PROJECT_DIR$/font" />
+            <option value="$PROJECT_DIR$/gradleDemos" />
+            <option value="$PROJECT_DIR$/viewgroupdemo" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/designmode" />
-            <option value="$PROJECT_DIR$/export_in_aar" />
-            <option value="$PROJECT_DIR$/export_out_aar" />
-            <option value="$PROJECT_DIR$/export_out_aar2" />
-            <option value="$PROJECT_DIR$/helloworld" />
-            <option value="$PROJECT_DIR$/intentservice" />
-            <option value="$PROJECT_DIR$/setbootapp" />
-            <option value="$PROJECT_DIR$/versiondemo" />
-            <option value="$PROJECT_DIR$/viewpager" />
+            <option value="$PROJECT_DIR$/font" />
+            <option value="$PROJECT_DIR$/gradleDemos" />
+            <option value="$PROJECT_DIR$/viewgroupdemo" />
           </set>
         </option>
       </GradleProjectSettings>

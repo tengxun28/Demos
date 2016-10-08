@@ -4,12 +4,20 @@ android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
 
+
+
     defaultConfig {
         applicationId "com.iboxpay.android.versiondemo"
         minSdkVersion 14
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        // wangyaohui begin add
+        ndk {
+            moduleName "jnidemo" // <-- This is the name of my C++ module!
+            ldLibs "cutils", "utils"
+        }
+        // wangyaohui begin end
     }
     buildTypes {
         release {
